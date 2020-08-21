@@ -1,8 +1,8 @@
 package code_2_15;
 
-import code_2_11.BankStatementCSVParser;
-import code_2_11.BankStatementParser;
-import code_2_4.BankTransaction;
+import code_2_final.BankStatementCSVParser;
+import code_2_final.BankStatementParser;
+import code_2_final.BankTransaction;
 import org.junit.Assert;
 import org.junit.Test;
 
