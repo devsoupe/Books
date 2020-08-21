@@ -1,0 +1,7 @@
+// 절대 사용하지 말아야 하는 사례
+
+final String[] column = line.split(",");
+
+if (columns.length < EXPECTED_ATTRIBUTES_LENGTH) {
+    return null;
+}
