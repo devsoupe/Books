@@ -1,18 +1,16 @@
-package code_3_21;
-
-import code_3_20.Notification;
+package code_3_final;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Objects;
 
-public class NotificationPattern {
+public class NotificationUsagePattern {
 
     private String description;
     private String date;
     private String amount;
 
-    public NotificationPattern(String description, String date, String amount) {
+    public NotificationUsagePattern(String description, String date, String amount) {
         this.description = Objects.requireNonNull(description);
         this.date = Objects.requireNonNull(date);
         this.amount = amount;
