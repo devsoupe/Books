@@ -1,0 +1,18 @@
+// 확장성이 부족한 임포트 기능
+
+switch (extension) {
+    case "letter":
+        // 우편물 임포트 코드
+        break;
+
+    case "report":
+        // 레포트 임포트 코드
+        break;
+
+    case "jpg":
+        // 이미지 임포트 코드
+        break;
+
+    default:
+        throw new UnknownFileTypeException("For file: " + path);
+}
