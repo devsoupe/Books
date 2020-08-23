@@ -1,3 +1,0 @@
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-Exception in thread "main" java.nio.file.NoSuchFileException: src/main/resources/bank-data.simple.csv
-Exception in thread "main" java.lang.OutOfMemoryError: Java heap space

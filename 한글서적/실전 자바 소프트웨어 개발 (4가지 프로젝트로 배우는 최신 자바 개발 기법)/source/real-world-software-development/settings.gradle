@@ -1,5 +1,1 @@
 rootProject.name = 'real-world-software-development'
-include 'chapter_02'
-include 'chapter_03'
-include 'chapter_04'
-

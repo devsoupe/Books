@@ -1,9 +1,0 @@
-// 예외를 남용하는 나쁜 사례 (흐름제어용)
-
-try {
-    while (true) {
-        System.out.println(source.read());
-    }
-} catch (NoDataException e) {
-
-}
