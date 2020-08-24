@@ -13,4 +13,8 @@ public class Document {
     public Map<String, String> getAttributes() {
         return attributes;
     }
+
+    public String getAttribute(final String attributeName) {
+        return attributes.get(attributeName);
+    }
 }
