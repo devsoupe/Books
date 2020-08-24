@@ -3,6 +3,7 @@ package chatper_04;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.List;
 
 import static chatper_04.Attributes.*;
@@ -96,6 +97,16 @@ public class DocumentManagementSystemTest {
         assertThat(documents, hasSize(1));
 
         assertIsReport(documents.get(0));
+    }
+
+    @Test(expected = FileNotFoundException.class)
+    public void shouldNotImportMissingFile() throws Exception {
+        system.importFile("gobbledygook.txt");
+    }
+
+    @Test(expected = UnknownFileTypeException.class)
+    public void shouldNotImportUnknownFile() throws Exception {
+        system.importFile(RESOURCES + "unknown.txt");
     }
 
     private void assertAttributeEquals(final Document document, final String attributeName, final String expectedValue) {
