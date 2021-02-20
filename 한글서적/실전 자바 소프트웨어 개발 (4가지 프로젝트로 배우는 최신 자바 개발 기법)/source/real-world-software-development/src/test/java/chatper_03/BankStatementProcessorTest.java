@@ -1,5 +1,8 @@
 package chatper_03;
 
+import chapter_03.BankStatementProcessor;
+import chapter_03.BankTransaction;
+import chapter_03.BankTransactionFilter;
 import org.junit.Test;
 
 import java.time.LocalDate;

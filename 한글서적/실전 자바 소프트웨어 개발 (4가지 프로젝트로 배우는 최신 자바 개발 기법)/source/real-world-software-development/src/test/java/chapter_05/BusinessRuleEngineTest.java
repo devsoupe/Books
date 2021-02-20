@@ -8,6 +8,7 @@ import static org.mockito.Mockito.verify;
 
 public class BusinessRuleEngineTest {
 
+    /*
     @Test
     public void shouldHaveNoRoulesInitially() {
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();
@@ -33,5 +34,17 @@ public class BusinessRuleEngineTest {
         businessRuleEngine.run();
 
         verify(mockAction).execute();
+    }*/
+
+    @Test
+    public void shouldPerformAnActionWithFacts() {
+        final Action mockAction = mock(Action.class);
+        final Facts mockFacts = mock(Facts.class);
+        final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine(mockFacts);
+
+        businessRuleEngine.addAction(mockAction);
+        businessRuleEngine.run();
+
+        verify(mockAction).execute(mockFacts);
     }
 }

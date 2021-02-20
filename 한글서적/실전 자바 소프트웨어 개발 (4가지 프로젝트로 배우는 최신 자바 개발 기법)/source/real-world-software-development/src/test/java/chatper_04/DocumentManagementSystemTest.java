@@ -1,12 +1,15 @@
 package chatper_04;
 
+import chapter_04.Document;
+import chapter_04.DocumentManagementSystem;
+import chapter_04.UnknownFileTypeException;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import static chatper_04.Attributes.*;
+import static chapter_04.Attributes.*;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.*;
 
