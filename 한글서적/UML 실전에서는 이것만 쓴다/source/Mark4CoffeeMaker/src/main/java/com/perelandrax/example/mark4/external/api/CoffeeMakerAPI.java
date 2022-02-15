@@ -1,4 +1,4 @@
-package com.perelandrax.example;
+package com.perelandrax.example.mark4.external.api;
 
 /**
  * 마크 IV 특수 커피메이커 [명세]
